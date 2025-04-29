@@ -1,74 +1,95 @@
 body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #333;
-    direction: rtl;
-  }
-  
-  header {
-    background-color: #65E6A4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .logo {
-    height: 60px;
-  }
-  
-  nav button {
-    background-color: white;
-    border: 1px solid #65E6A4;
-    color: #333;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f6fdf8;
-  }
-  
-  .whatsapp-button {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #65E6A4;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .about, .reviews, .videos {
-    padding: 2rem;
-  }
-  
-  .review-gallery img {
-    width: 200px;
-    margin: 0.5rem;
-    border-radius: 10px;
-  }
-  
-  video {
-    width: 100%;
-    max-width: 500px;
-    margin: 1rem 0;
-  }
-  
-  footer {
-    background-color: #65E6A4;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  footer .socials a {
-    margin: 0 1rem;
-    color: white;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f7fdf9;
+  color: #333;
+  direction: rtl;
+  text-align: center;
+}
+
+header {
+  background-color: #65E6A4;
+  padding: 30px 10px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  color: #16804a;
+  margin: 40px 0 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+video {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.review-grid img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #65E6A4;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+.socials a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #16804a;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #65E6A4;
+  color: #fff;
+  padding: 15px 10px;
+  margin-top: 30px;
+}
