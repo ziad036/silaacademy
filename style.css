@@ -1,3 +1,4 @@
+/* === Global Styles === */
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
@@ -5,8 +6,10 @@ body {
   color: #333;
   direction: rtl;
   text-align: center;
+  line-height: 1.6;
 }
 
+/* === Header === */
 header {
   background-color: #65E6A4;
   padding: 30px 10px;
@@ -23,22 +26,25 @@ h1 {
   margin: 0;
 }
 
+/* === Sections === */
+section {
+  padding: 40px 20px;
+}
+
 h2 {
   font-size: 26px;
   color: #16804a;
-  margin: 40px 0 20px;
-}
-
-section {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .about p {
   max-width: 700px;
   margin: 0 auto;
   font-size: 18px;
+  color: #444;
 }
 
+/* === Videos Section === */
 .video-grid {
   display: flex;
   justify-content: center;
@@ -49,8 +55,10 @@ section {
 video {
   width: 300px;
   border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
+/* === Reviews Gallery === */
 .review-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -62,8 +70,14 @@ video {
   width: 100%;
   border-radius: 12px;
   border: 2px solid #65E6A4;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.review-grid img:hover {
+  transform: scale(1.05);
 }
 
+/* === Contact / WhatsApp === */
 .whatsapp-button {
   display: inline-block;
   background-color: #25D366;
@@ -73,13 +87,15 @@ video {
   text-decoration: none;
   font-size: 18px;
   margin: 20px 0;
-  transition: 0.3s;
+  transition: background 0.3s;
 }
-
 .whatsapp-button:hover {
   background-color: #1da851;
 }
 
+.socials {
+  margin-top: 15px;
+}
 .socials a {
   margin: 0 10px;
   text-decoration: none;
@@ -87,9 +103,42 @@ video {
   font-weight: bold;
 }
 
+/* === Footer === */
 footer {
   background-color: #65E6A4;
   color: #fff;
   padding: 15px 10px;
   margin-top: 30px;
+  font-size: 14px;
+}
+
+/* === Fade-in Animation === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease-in-out;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Lightbox Preview === */
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
