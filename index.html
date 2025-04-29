@@ -3,51 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>أكاديمية صِلَة</title>
+  <title>أكاديمية صلة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="شعار الأكاديمية" class="logo">
-    <h1>أكاديمية صِلَة لتحفيظ القرآن الكريم وتعليم العلوم الشرعية</h1>
+    <div class="container header-container">
+      <img src="logo.jpg" alt="شعار الأكاديمية" class="logo">
+      <nav>
+        <button id="lang-switch"><i class="fas fa-globe"></i> English</button>
+      </nav>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>من نحن؟</h2>
-    <p>أكاديمية صِلَة منصة تعليمية متخصصة في تعليم القرآن الكريم بالتجويد، تأسيس اللغة العربية، العلوم الشرعية، والمزيد لكل أفراد الأسرة.</p>
+  <section class="hero">
+    <div class="container">
+      <h1>مرحبًا بكم في أكاديمية صِلَة</h1>
+      <p>نُعلّم القرآن الكريم بالتجويد، ونغرس محبة كتاب الله في قلوب الكبار والصغار</p>
+      <a class="whatsapp-button" href="https://wa.me/message/RSFJWGQ27KVVJ1" target="_blank">
+        <i class="fab fa-whatsapp"></i> تواصل معنا الآن على واتساب
+      </a>
+    </div>
   </section>
 
-  <section class="videos">
-    <h2>جلسات مسجلة</h2>
-    <div class="video-grid">
-      <video controls src="session1.mp4"></video>
-      <video controls src="session2.mp4"></video>
+  <section class="about">
+    <div class="container">
+      <h2>عن الأكاديمية</h2>
+      <p>أكاديمية صِلَة هي منصة تعليمية إلكترونية تهدف إلى تعليم القرآن الكريم وعلومه، بالإضافة إلى اللغة العربية والتأسيس في المواد الدراسية، من خلال نخبة من المعلمين والمعلمات المتخصصين.</p>
     </div>
   </section>
 
   <section class="reviews">
-    <h2>آراء طلابنا</h2>
-    <div class="review-grid">
-      <img src="review1.png" alt="رأي 1">
-      <img src="review2.png" alt="رأي 2">
-      <img src="review3.png" alt="رأي 3">
-      <img src="review4.png" alt="رأي 4">
-      <img src="review5.png" alt="رأي 5">
-      <img src="review6.png" alt="رأي 6">
+    <div class="container">
+      <h2>آراء بعض العملاء</h2>
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p class="review-text">أكاديمية صلة ساعدت طفلي على تحسين تلاوته للقرآن بشكل كبير. المعلمين متميزين والتعليم منظم ومفيد جدًا.</p>
+          <div class="review-author">
+            <img src="review1.png" alt="صورة أم محمد">
+            <div class="author-details">
+              <h4>أم محمد</h4>
+              <p>ولي أمر</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p class="review-text">تعلمت أحكام التجويد بطريقة سهلة وممتعة. الأساتذة محترفون ويشرحون بأسلوب مبسط وواضح.</p>
+          <div class="review-author">
+            <img src="review2.png" alt="صورة أحمد">
+            <div class="author-details">
+              <h4>أحمد النجار</h4>
+              <p>طالب</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="quote-icon">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <p class="review-text">اختيار موفق لبناتي، استفادوا كثيرًا من دروس اللغة العربية والقرآن. المنهج منظم والمتابعة مستمرة.</p>
+          <div class="review-author">
+            <img src="review3.png" alt="صورة سارة">
+            <div class="author-details">
+              <h4>سارة العتيبي</h4>
+              <p>ولي أمر</p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>تواصل معنا</h2>
-    <a href="https://wa.me/message/RSFJWGQ27KVVJ1" target="_blank" class="whatsapp-button">راسلنا على واتساب</a>
-    <div class="socials">
-      <a href="https://www.instagram.com/silaacademy2002/">انستجرام</a>
-      <a href="https://www.facebook.com/silaacademy2002/">فيسبوك</a>
+  <section class="videos">
+    <div class="container">
+      <h2>تسجيلات من بعض الحصص</h2>
+      <div class="videos-container">
+        <div class="video-card" data-video="session1.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb1.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>دروس التجويد الأساسية</h3>
+            <p>مقدمة في أحكام النون الساكنة والتنوين</p>
+          </div>
+        </div>
+        
+        <div class="video-card" data-video="session2.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb2.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>تعليم سورة الفاتحة للأطفال</h3>
+            <p>طرق تحفيظ السور القصيرة للمبتدئين</p>
+          </div>
+        </div>
+        
+        <div class="video-card" data-video="session3.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb3.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>أحكام المد</h3>
+            <p>شرح مفصل عن أنواع المدود وتطبيقاتها</p>
+          </div>
+        </div>
+        
+        <div class="video-card" data-video="session4.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb4.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>تعليم القاعدة النورانية</h3>
+            <p>أساسيات نطق الحروف للمبتدئين</p>
+          </div>
+        </div>
+        
+        <div class="video-card" data-video="session5.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb5.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>قواعد اللغة العربية</h3>
+            <p>محاضرة تأسيسية في علم النحو</p>
+          </div>
+        </div>
+        
+        <div class="video-card" data-video="session6.mp4">
+          <div class="video-thumbnail">
+            <img src="thumb6.jpg" alt="صورة مصغرة للدرس">
+            <div class="play-button">
+              <i class="fas fa-play-circle"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>تفسير جزء عم</h3>
+            <p>شرح معاني سورة النبأ وفضائلها</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal">
+        <i class="fas fa-times"></i>
+      </button>
+      <video class="modal-video" controls id="modalVideo"></video>
+    </div>
+  </div>
 
   <footer>
-    <p>جميع الحقوق محفوظة © أكاديمية صِلَة</p>
+    <div class="container">
+      <p>تواصلوا معنا:</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/silaacademy2002/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/silaacademy2002/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://wa.me/message/RSFJWGQ27KVVJ1" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:info@silaacademy.com">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+      <p>© جميع الحقوق محفوظة لأكاديمية صِلَة</p>
+    </div>
   </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
