@@ -20,42 +20,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Video modal functionality
     const videoCards = document.querySelectorAll('.video-card');
-    const videoModal = document.getElementById('videoModal');
-    const modalVideo = document.getElementById('modalVideo');
-    const closeModal = document.getElementById('closeModal');
-    
-    videoCards.forEach(card => {
-      card.addEventListener('click', function() {
-        const videoSrc = this.getAttribute('data-video');
-        modalVideo.src = videoSrc;
-        videoModal.classList.add('active');
-        modalVideo.play();
-      });
-    });
-    
-    closeModal.addEventListener('click', function() {
-      videoModal.classList.remove('active');
-      modalVideo.pause();
-      modalVideo.src = '';
-    });
-    
-    // Close modal when clicking outside of video
-    videoModal.addEventListener('click', function(e) {
-      if (e.target === videoModal) {
-        videoModal.classList.remove('active');
-        modalVideo.pause();
-        modalVideo.src = '';
-      }
-    });
-    
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && videoModal.classList.contains('active')) {
-        videoModal.classList.remove('active');
-        modalVideo.pause();
-        modalVideo.src = '';
-      }
-    });
+const videoModal = document.getElementById('videoModal');
+const modalIframe = document.getElementById('modalIframe');
+const closeModal = document.getElementById('closeModal');
+
+videoCards.forEach(card => {
+  card.addEventListener('click', function () {
+    const videoId = this.getAttribute('data-video-id');
+    const youtubeURL = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    modalIframe.src = youtubeURL;
+    videoModal.classList.add('active');
+  });
+});
+
+closeModal.addEventListener('click', function () {
+  videoModal.classList.remove('active');
+  modalIframe.src = '';
+});
+
+videoModal.addEventListener('click', function (e) {
+  if (e.target === videoModal) {
+    videoModal.classList.remove('active');
+    modalIframe.src = '';
+  }
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+    videoModal.classList.remove('active');
+    modalIframe.src = '';
+  }
+});
+
     
     // Mobile reviews carousel (for screens smaller than 768px)
     const reviewCards = document.querySelectorAll('.review-card');
